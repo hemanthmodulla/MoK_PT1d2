@@ -1,0 +1,17 @@
+D:\Mok_PT1d1\MoK_PT1d2\MoK_PT1d2_API\MoK_PT1d2_API\bin\Debug\netcoreapp2.1\appsettings.Development.json
+D:\Mok_PT1d1\MoK_PT1d2\MoK_PT1d2_API\MoK_PT1d2_API\bin\Debug\netcoreapp2.1\appsettings.json
+D:\Mok_PT1d1\MoK_PT1d2\MoK_PT1d2_API\MoK_PT1d2_API\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+D:\Mok_PT1d1\MoK_PT1d2\MoK_PT1d2_API\MoK_PT1d2_API\bin\Debug\netcoreapp2.1\MoK_PT1d2_API.deps.json
+D:\Mok_PT1d1\MoK_PT1d2\MoK_PT1d2_API\MoK_PT1d2_API\bin\Debug\netcoreapp2.1\MoK_PT1d2_API.runtimeconfig.json
+D:\Mok_PT1d1\MoK_PT1d2\MoK_PT1d2_API\MoK_PT1d2_API\bin\Debug\netcoreapp2.1\MoK_PT1d2_API.runtimeconfig.dev.json
+D:\Mok_PT1d1\MoK_PT1d2\MoK_PT1d2_API\MoK_PT1d2_API\bin\Debug\netcoreapp2.1\MoK_PT1d2_API.dll
+D:\Mok_PT1d1\MoK_PT1d2\MoK_PT1d2_API\MoK_PT1d2_API\obj\Debug\netcoreapp2.1\MoK_PT1d2_API.RazorAssemblyInfo.cache
+D:\Mok_PT1d1\MoK_PT1d2\MoK_PT1d2_API\MoK_PT1d2_API\obj\Debug\netcoreapp2.1\MoK_PT1d2_API.RazorAssemblyInfo.cs
+D:\Mok_PT1d1\MoK_PT1d2\MoK_PT1d2_API\MoK_PT1d2_API\obj\Debug\netcoreapp2.1\MoK_PT1d2_API.AssemblyInfoInputs.cache
+D:\Mok_PT1d1\MoK_PT1d2\MoK_PT1d2_API\MoK_PT1d2_API\obj\Debug\netcoreapp2.1\MoK_PT1d2_API.AssemblyInfo.cs
+D:\Mok_PT1d1\MoK_PT1d2\MoK_PT1d2_API\MoK_PT1d2_API\obj\Debug\netcoreapp2.1\MoK_PT1d2_API.RazorTargetAssemblyInfo.cache
+D:\Mok_PT1d1\MoK_PT1d2\MoK_PT1d2_API\MoK_PT1d2_API\obj\Debug\netcoreapp2.1\MoK_PT1d2_API.genruntimeconfig.cache
+D:\Mok_PT1d1\MoK_PT1d2\MoK_PT1d2_API\MoK_PT1d2_API\obj\Debug\netcoreapp2.1\MoK_PT1d2_API.csproj.CoreCompileInputs.cache
+D:\Mok_PT1d1\MoK_PT1d2\MoK_PT1d2_API\MoK_PT1d2_API\bin\Debug\netcoreapp2.1\MoK_PT1d2_API.pdb
+D:\Mok_PT1d1\MoK_PT1d2\MoK_PT1d2_API\MoK_PT1d2_API\obj\Debug\netcoreapp2.1\MoK_PT1d2_API.dll
+D:\Mok_PT1d1\MoK_PT1d2\MoK_PT1d2_API\MoK_PT1d2_API\obj\Debug\netcoreapp2.1\MoK_PT1d2_API.pdb

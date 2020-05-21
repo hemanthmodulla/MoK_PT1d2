@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="content">
+    <h1 class="headerText">Welcome to the Login presentation!!!</h1>
+    <p>
+      <span>Click this button to see the movie list:</span> 
+      <button type="button" name="show" (click)="getLogins()">Show Login</button>
+    </p>
+    <div *ngIf="logins" class="table-center">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Genre</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor='let login of logins'>
+            <td>{{login?.userName}}</td>
+            <td>{{login?.password}}</td>
+          </tr>
+        </tbody>
+      </table>
+   </div>
+  </div>
+</div>
