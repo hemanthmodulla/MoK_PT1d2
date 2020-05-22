@@ -124,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "MoK-PT1d2-Ang"
+    }
+  },
+  "defaultProject": "MoK-PT1d2-Ang",
+  "cli": {
+    "analytics": "af3ba706-55b0-404f-8b2c-b0bd68be6567"
+  }
 }
