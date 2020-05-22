@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { HttpService } from './services/http.service';
-import { Login } from './_interfaces/login';
+import { Login } from './models/login.model';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styles:[]
 })
 export class AppComponent {
   public logins: Login[];

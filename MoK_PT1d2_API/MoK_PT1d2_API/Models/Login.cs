@@ -12,9 +12,11 @@ namespace MoK_PT1d2_API.Models
     public class Login
     {
         [Key]
-        public Guid id { get; set; }
-        public string userName { get; set; }
+        public Guid Id { get; set; }
+        [Required]
+        public string UserName { get; set; }
         [PasswordPropertyText(true)]
-        public string password { get; set; }
+        [Required]
+        public string Password { get; set; }
     }
 }

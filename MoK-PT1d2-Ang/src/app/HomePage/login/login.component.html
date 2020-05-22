@@ -1,0 +1,36 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="logo">MoK Prototype 1.2</div>
+            </div>
+            <div class="col-sm-6 hidden-xs">
+                <form #form="ngForm" autocomplete="off" *ngIf="loginService.loginData" (submit)="onSubmit(form)" >
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <div class="form-group">
+                                <input name="UserName" #UserName= "ngModel" [(ngModel)]="loginService.loginData.UserName" type="text" class="form-control" placeholder="Email Address">
+                            </div>
+                        </div>	
+                        <div class="col-sm-5">
+                            <div class="form-group">
+                                <input name="Password" #Password= "ngModel" [(ngModel)]="loginService.loginData.Password" type="text" class="form-control" placeholder="Password">
+                                <div class="login-bottom-text hidden-sm"> Forgot your password?  </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="form-group">
+                                <input type="submit" value="login" class="btn btn-default btn-header-login">
+                            </div>
+                        </div>
+                    </div>
+                </form>	
+            </div>
+        </div>
+    </div>
+</header>
+<app-registration></app-registration>

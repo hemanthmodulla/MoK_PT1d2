@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using MoK_PT1d2_API.Models;
 
 namespace MoK_PT1d2_API.Controllers
 {
@@ -40,11 +41,20 @@ namespace MoK_PT1d2_API.Controllers
         //    return "value";
         //}
 
-        //// POST: api/Login
-        //[HttpPost]
-        //public void Post([FromBody] string value)
-        //{
-        //}
+        // POST: api/Login
+        [HttpPost]
+        public ActionResult Post([FromBody] Login loginData)
+        {
+
+            if (_context.LoginInfo.Any(x => x.UserName == loginData.UserName && x.Password == loginData.Password))
+            {
+                return Ok();
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
 
         //// PUT: api/Login/5
         //[HttpPut("{id}")]
