@@ -10,6 +10,8 @@ import {FormsModule} from '@angular/forms'
 import { ToastrModule } from 'ngx-toastr';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { HomeComponent } from './Main/home/home.component';
+import {BsDatepickerModule} from 'ngx-bootstrap/datepicker';
+
 
 @NgModule({
   declarations: [
@@ -24,6 +26,7 @@ import { HomeComponent } from './Main/home/home.component';
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
+    BsDatepickerModule.forRoot(),
     ToastrModule.forRoot()
   ],
   providers: [LoginService],
