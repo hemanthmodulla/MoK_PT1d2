@@ -9,12 +9,14 @@ import { LoginService } from './services/login.service';
 import {FormsModule} from '@angular/forms'
 import { ToastrModule } from 'ngx-toastr';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { HomeComponent } from './Main/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

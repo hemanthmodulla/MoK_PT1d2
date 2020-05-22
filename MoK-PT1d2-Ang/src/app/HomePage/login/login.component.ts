@@ -38,7 +38,7 @@ export class LoginComponent implements OnInit {
     if (this.validateForm()) {
       this.loginService.CheckLogin().subscribe(res => {
         if(res.status == 200){
-          console.log('skjchbsdc');
+          this.router.navigate(['/home']);
         }
       }, (err) => {
         alert('The email or phone number you’ve entered doesn’t match any account. Try again or Sign up for an account.')
