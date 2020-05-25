@@ -6,12 +6,12 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './HomePage/login/login.component';
 import { RegistrationComponent } from './HomePage/registration/registration.component';
 import { LoginService } from './services/login.service';
-import {FormsModule} from '@angular/forms'
+import {FormsModule} from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { HomeComponent } from './Main/home/home.component';
 import {BsDatepickerModule} from 'ngx-bootstrap/datepicker';
 import { ProfileinfoComponent } from './personal/profileinfo/profileinfo.component';
+import { DashboardComponent } from './Main/dashboard/dashboard.component';
 
 
 @NgModule({
@@ -19,8 +19,8 @@ import { ProfileinfoComponent } from './personal/profileinfo/profileinfo.compone
     AppComponent,
     LoginComponent,
     RegistrationComponent,
-    HomeComponent,
-    ProfileinfoComponent
+    ProfileinfoComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
