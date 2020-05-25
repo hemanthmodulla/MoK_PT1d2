@@ -11,6 +11,7 @@ import { ToastrModule } from 'ngx-toastr';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { HomeComponent } from './Main/home/home.component';
 import {BsDatepickerModule} from 'ngx-bootstrap/datepicker';
+import { ProfileinfoComponent } from './personal/profileinfo/profileinfo.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import {BsDatepickerModule} from 'ngx-bootstrap/datepicker';
     AppComponent,
     LoginComponent,
     RegistrationComponent,
-    HomeComponent
+    HomeComponent,
+    ProfileinfoComponent
   ],
   imports: [
     BrowserModule,
