@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
+import { Router } from '@angular/router';
+import { DashboardService } from '../../services/dashboard.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,7 +11,8 @@ import { MatSidenav } from '@angular/material/sidenav';
 export class DashboardComponent implements OnInit {
   activewrapper = true;
   activeProfile = false;
-  constructor() { }
+
+  constructor(public router: Router, public dashboardservice: DashboardService) { }
 
   ngOnInit(): void {
   }
@@ -19,5 +22,10 @@ export class DashboardComponent implements OnInit {
   ShowProfileOptions(event: Event) {
     console.log('safdefs');
     this.activeProfile = !this.activeProfile;
+  }
+
+  myProfile(){
+    this.dashboardservice.profileSelected = true;
+    this.router.navigate(['/home']);
   }
 }

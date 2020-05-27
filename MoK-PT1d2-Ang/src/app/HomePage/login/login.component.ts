@@ -6,6 +6,7 @@ import { Router } from '@angular/router';
 import { CompileShallowModuleMetadata } from '@angular/compiler';
 import { UserService } from '../../services/user.service';
 import { User } from '../../models/user.model';
+import { DashboardService } from '../../services/dashboard.service';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -16,7 +17,8 @@ export class LoginComponent implements OnInit {
   constructor(public loginService: LoginService,
               private toastr: ToastrService,
               private router: Router,
-              public userservice: UserService) { }
+              public userservice: UserService,
+              public dashboardservice: DashboardService) { }
 
   ngOnInit() {
     if (this.loginService.loginData == null) {
@@ -52,9 +54,11 @@ export class LoginComponent implements OnInit {
             console.log(res);
             this.userservice.LoggedInUserInfo = res as User ;
             if (this.userservice.LoggedInUserInfo.FirstName == null && this.userservice.LoggedInUserInfo.LastName == null){
-              this.router.navigate(['/myprofile']);
+              this.dashboardservice.profileSelected = true;
+              this.router.navigate(['/home']);
             }
             else{
+              this.dashboardservice.profileSelected = false;
               this.router.navigate(['/home']);
             }
           });
