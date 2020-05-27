@@ -19,6 +19,7 @@ import { ProfileinfoComponent } from './personal/profileinfo/profileinfo.compone
 import { DashboardComponent } from './Main/dashboard/dashboard.component';
 import { SidenavComponent } from './Main/sidenav/sidenav.component';
 import { DashboardBodyComponent } from './Main/dashboard-body/dashboard-body.component';
+import { CompDashboardComponent } from './Company/comp-dashboard/comp-dashboard.component';
 
 
 
@@ -31,6 +32,7 @@ import { DashboardBodyComponent } from './Main/dashboard-body/dashboard-body.com
     DashboardComponent,
     SidenavComponent,
     DashboardBodyComponent,
+    CompDashboardComponent,
   ],
   imports: [
     BrowserModule,
