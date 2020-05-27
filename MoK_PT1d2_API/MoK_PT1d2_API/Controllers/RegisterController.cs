@@ -65,6 +65,8 @@ namespace MoK_PT1d2_API.Controllers
                 UserInfo uInfo = new UserInfo();
                 uInfo.RegistrationID = currentLogin.Id;
                 uInfo.DateOfBirth = userInformation.DateOfBirth;
+                _context.UsersInfo.Add(uInfo);
+                _context.SaveChanges();
                 return Ok();
             }
             else

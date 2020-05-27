@@ -48,7 +48,8 @@ namespace MoK_PT1d2_API.Controllers
 
             if (_context.LoginInfo.Any(x => x.UserName == loginData.UserName && x.Password == loginData.Password))
             {
-                return Ok();
+                var loggedIn = _context.LoginInfo.Where(x => x.UserName == loginData.UserName && x.Password == loginData.Password).ToList();
+                return Ok(loggedIn[0].Id);
             }
             else
             {

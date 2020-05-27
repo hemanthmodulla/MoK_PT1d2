@@ -1,0 +1,7 @@
+GoToProfile(){
+    this.userservice.GetDataForLoggedInUser().subscribe(res => {
+      console.log(res);
+      this.userservice.LoggedInUserInfo = res as User ;
+      this.router.navigate(['/myprofile']);
+    });
+  }

@@ -13,7 +13,9 @@ import { getDate } from 'ngx-bootstrap/chronos/utils/date-getters';
 export class RegistrationComponent implements OnInit {
 
   dob;
+  // tslint:disable-next-line: variable-name
   init_password = '';
+  // tslint:disable-next-line: variable-name
   repeat_password = '';
   isValid = true;
   constructor(public registrationService: RegistrationService,
@@ -31,8 +33,9 @@ export class RegistrationComponent implements OnInit {
   }
   validateForm() {
     this.isValid = false;
-    // tslint:disable-next-line: max-line-length
-    if (this.registrationService.RegisteredUserData.UserName != null && this.init_password  != null && this.init_password == this.repeat_password && this.dob != null  ) {
+    if (this.registrationService.RegisteredUserData.UserName != null && this.init_password  != null &&
+      // tslint:disable-next-line: triple-equals
+      this.init_password == this.repeat_password && this.dob != null  ) {
       this.isValid = true;
       console.log('true');
       this.registrationService.RegisteredUserData.Password = this.init_password;
@@ -47,18 +50,22 @@ export class RegistrationComponent implements OnInit {
     if (this.validateForm()) {
       this.registrationService.CheckUserInfoAndRegister().subscribe(res => {
         console.log(res);
+        // tslint:disable-next-line: triple-equals
         if (res.status == 200){
           this.router.navigate(['/Login']);
 
         }
       }, (err) => {
-        alert('UserName already exists in the data please select a new one....')
+        alert('UserName already exists in the data please select a new one....');
       });
     }
+    // tslint:disable-next-line: triple-equals
     if (this.registrationService.RegisteredUserData.UserName == '' ){
+      // tslint:disable-next-line: triple-equals
       alert('UserName is a required Field'); }else if (this.init_password == '' || this.repeat_password == ''){
-      alert('Password or Repeat Password Field cannot be empty');} else if(this.dob == null){
-      alert('Date of Birth is a required Field');}else if(this.init_password != this.repeat_password){alert('Password and Repeat password are not same please enter again');
+      alert('Password or Repeat Password Field cannot be empty'); } else if (this.dob == null){
+      // tslint:disable-next-line: triple-equals
+      alert('Date of Birth is a required Field'); }else if (this.init_password != this.repeat_password){alert('Password and Repeat password are not same please enter again');
       }
 
   }
