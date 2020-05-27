@@ -11,6 +11,16 @@ import { ToastrModule } from 'ngx-toastr';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {BsDatepickerModule} from 'ngx-bootstrap/datepicker';
 import { ProfileinfoComponent } from './Personal/profileinfo/profileinfo.component';
+import { MatToolbarModule, } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatSidenavModule, } from '@angular/material/sidenav';
+import { MatListModule, } from '@angular/material/list';
+import { MatButtonModule, } from '@angular/material/button';
+import { DashboardComponent } from './Main/dashboard/dashboard.component';
+import { SidenavComponent } from './Main/sidenav/sidenav.component';
+import { DashboardBodyComponent } from './Main/dashboard-body/dashboard-body.component';
+import { CompDashboardComponent } from './Company/comp-dashboard/comp-dashboard.component';
+
 
 
 @NgModule({
@@ -18,7 +28,11 @@ import { ProfileinfoComponent } from './Personal/profileinfo/profileinfo.compone
     AppComponent,
     LoginComponent,
     RegistrationComponent,
-    ProfileinfoComponent
+    ProfileinfoComponent,
+    DashboardComponent,
+    SidenavComponent,
+    DashboardBodyComponent,
+    CompDashboardComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,7 +41,12 @@ import { ProfileinfoComponent } from './Personal/profileinfo/profileinfo.compone
     FormsModule,
     BrowserAnimationsModule,
     BsDatepickerModule.forRoot(),
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule,
+    MatButtonModule,
+    MatIconModule,
   ],
   providers: [LoginService],
   bootstrap: [AppComponent]

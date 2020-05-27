@@ -1,0 +1,62 @@
+.sidebar{
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 225px;
+  height: 100%;
+  background: #004D40;
+  transition: all 0.3s ease;
+}
+
+.sidebar .sidebar__inner{
+  position: relative;
+}
+
+.sidebar .profile{
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding: 20px 0;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.sidebar .profile .img{
+  padding: 0 18px;
+}
+
+.sidebar .profile img{
+   width: 45px;
+}
+
+.sidebar .profile p:first-child{
+  font-size: 14px;
+  color: #80CBC4;
+  margin-bottom: 3px;
+}
+
+.sidebar ul li a{
+  color: #fff;
+  font-size: 18px;
+  padding: 20px 30px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1px;
+  transition: all 0.3s ease;
+}
+
+.sidebar ul li a .icon{
+  margin-right: 15px;
+  font-size: 28px;
+}
+
+.sidebar ul li a span{
+  display: inline-block;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active{
+  background: #fff;
+  color: #004D40;
+}
