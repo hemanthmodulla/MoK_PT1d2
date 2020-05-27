@@ -87,6 +87,10 @@
   color: #004D40;
 }
 
+.profile_Icon{
+  cursor: pointer;
+}
+
 .top_navbar .menu .right_menu ul li .profile_dd{
   position: absolute;
   top: 35px;
@@ -98,6 +102,7 @@
   border-radius: 3px;
   display: none;
   user-select: none;
+  cursor: pointer;
 }
 
 .top_navbar .menu .right_menu ul li .profile_dd.active{

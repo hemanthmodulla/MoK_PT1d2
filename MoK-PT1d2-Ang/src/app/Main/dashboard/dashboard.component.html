@@ -1,3 +1,11 @@
+<link rel = "stylesheet" href = "https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+      <link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+      
 <div class="wrapper" [class.active] = "activewrapper">
   <div class="top_navbar">
     <div class="hamburger">
@@ -13,8 +21,13 @@
       </div>
       <div class="right_menu">
         <ul>
-          <li><i class="fas fa-user"></i>
-            <div class="profile_dd">
+          <li>
+            <div class="profile_Icon">
+              <span class="material-icons"(click)="ShowProfileOptions($event)">
+                account_circle
+              </span></div>
+            
+            <div class="profile_dd" [class.active] = "activeProfile">
                <div class="dd_item">Profile</div>
                <div class="dd_item">Change Password</div>
                <div class="dd_item">Logout</div>
@@ -40,32 +53,39 @@
             <ul>
               <li>
                 <a href="#" class="active">
-                  <span class="icon"><i class="fab fa-artstation"></i></span>
+                  <div class="profile_Icon">
+                    <span class="material-icons">
+                      store
+                    </span></div>
+                    &nbsp;
                   <span class="title">My Company</span>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <span class="icon"><i class="fab fa-delicious"></i></span>
+                  <span class="material-icons">
+                    shopping_cart
+                  </span> 
+                  &nbsp;
                   <span class="title">Forms</span>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <span class="icon"><i class="fab fa-elementor"></i></span>
-                  <span class="title">UI Elements</span>
+                  <span class="material-icons">
+                    message
+                  </span>
+                  &nbsp;
+                  <span class="title">Messages</span>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <span class="icon"><i class="fas fa-chart-pie"></i></span>
+                  <span class="material-icons">
+                    pie_chart
+                  </span> 
+                  &nbsp;
                   <span class="title">Charts</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="icon"><i class="fas fa-border-all"></i></span>
-                  <span class="title">Tables</span>
                 </a>
               </li>
             </ul>

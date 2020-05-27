@@ -10,7 +10,7 @@ import {FormsModule} from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MatToolbarModule, } from '@angular/material/toolbar';
-import { MatIconModule, } from '@angular/material/icon';
+import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule, } from '@angular/material/sidenav';
 import { MatListModule, } from '@angular/material/list';
 import { MatButtonModule, } from '@angular/material/button';
