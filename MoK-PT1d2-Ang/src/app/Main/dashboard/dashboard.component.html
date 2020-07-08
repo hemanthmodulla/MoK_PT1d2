@@ -7,7 +7,7 @@
       <link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">
       
 <div class="wrapper" [class.active] = "activewrapper">
-  <div class="top_navbar">
+  <div class="top_navbar" style="z-index: 999;" >
     <div class="hamburger">
        <div class="hamburger__inner" (click)="ShowSideNav($event)">
          <div class="one"></div>
@@ -15,8 +15,8 @@
          <div class="three"></div>
        </div>
     </div>
-    <div class="menu">
-      <div class="logo">
+    <div class="menu " >
+      <div class="logo" >
         Coding Market
       </div>
       <div class="right_menu">
@@ -28,8 +28,7 @@
               </span></div>
             
             <div class="profile_dd" [class.active] = "activeProfile">
-               <div class="dd_item">Profile</div>
-               <div class="dd_item">Change Password</div>
+               <div class="dd_item" (click)=myProfile() >Profile</div>
                <div class="dd_item">Logout</div>
             </div>
           </li>
@@ -91,28 +90,8 @@
             </ul>
           </div>
       </div>
-      <div class="container">
-        <div class="item">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab a nesciunt doloribus. Explicabo minus cumque, molestiae tempore repellendus iusto enim maiores pariatur officiis perferendis excepturi, ut dolore laborum eligendi laudantium placeat aspernatur! Quos dolorum unde officiis labore est animi excepturi neque, provident, inventore nobis expedita facilis aspernatur, nihil in atque?
-        </div>
-        <div class="item">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab a nesciunt doloribus. Explicabo minus cumque, molestiae tempore repellendus iusto enim maiores pariatur officiis perferendis excepturi, ut dolore laborum eligendi laudantium placeat aspernatur! Quos dolorum unde officiis labore est animi excepturi neque, provident, inventore nobis expedita facilis aspernatur, nihil in atque?
-        </div>
-        <div class="item">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab a nesciunt doloribus. Explicabo minus cumque, molestiae tempore repellendus iusto enim maiores pariatur officiis perferendis excepturi, ut dolore laborum eligendi laudantium placeat aspernatur! Quos dolorum unde officiis labore est animi excepturi neque, provident, inventore nobis expedita facilis aspernatur, nihil in atque?
-        </div>
-        <div class="item">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab a nesciunt doloribus. Explicabo minus cumque, molestiae tempore repellendus iusto enim maiores pariatur officiis perferendis excepturi, ut dolore laborum eligendi laudantium placeat aspernatur! Quos dolorum unde officiis labore est animi excepturi neque, provident, inventore nobis expedita facilis aspernatur, nihil in atque?
-        </div>
-        <div class="item">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab a nesciunt doloribus. Explicabo minus cumque, molestiae tempore repellendus iusto enim maiores pariatur officiis perferendis excepturi, ut dolore laborum eligendi laudantium placeat aspernatur! Quos dolorum unde officiis labore est animi excepturi neque, provident, inventore nobis expedita facilis aspernatur, nihil in atque?
-        </div>
-        <div class="item">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab a nesciunt doloribus. Explicabo minus cumque, molestiae tempore repellendus iusto enim maiores pariatur officiis perferendis excepturi, ut dolore laborum eligendi laudantium placeat aspernatur! Quos dolorum unde officiis labore est animi excepturi neque, provident, inventore nobis expedita facilis aspernatur, nihil in atque?
-        </div>
-        <div class="item">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab a nesciunt doloribus. Explicabo minus cumque, molestiae tempore repellendus iusto enim maiores pariatur officiis perferendis excepturi, ut dolore laborum eligendi laudantium placeat aspernatur! Quos dolorum unde officiis labore est animi excepturi neque, provident, inventore nobis expedita facilis aspernatur, nihil in atque?
-        </div>
+      <div class="container"  *ngIf="this.dashboardservice.profileSelected">
+        <app-profileinfo></app-profileinfo>>
       </div>
   </div>
   
