@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./comp-dashboard.component.scss']
 })
 export class CompDashboardComponent implements OnInit {
+  activewrapper = true;
+  activeProfile = false;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  ShowSideNav(event: Event) {
+    this.activewrapper = !this.activewrapper;
+  }
+  ShowProfileOptions(event: Event) {
+    this.activeProfile = !this.activeProfile;
   }
 
 }

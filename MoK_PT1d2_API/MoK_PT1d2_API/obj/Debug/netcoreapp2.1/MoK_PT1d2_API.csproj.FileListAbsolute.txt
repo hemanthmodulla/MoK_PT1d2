@@ -15,7 +15,6 @@ D:\Mok_PT1d1\MoK_PT1d2\MoK_PT1d2_API\MoK_PT1d2_API\obj\Debug\netcoreapp2.1\MoK_P
 D:\Mok_PT1d1\MoK_PT1d2\MoK_PT1d2_API\MoK_PT1d2_API\bin\Debug\netcoreapp2.1\MoK_PT1d2_API.pdb
 D:\Mok_PT1d1\MoK_PT1d2\MoK_PT1d2_API\MoK_PT1d2_API\obj\Debug\netcoreapp2.1\MoK_PT1d2_API.dll
 D:\Mok_PT1d1\MoK_PT1d2\MoK_PT1d2_API\MoK_PT1d2_API\obj\Debug\netcoreapp2.1\MoK_PT1d2_API.pdb
-D:\Mok_PT1d1\MoK_PT1d2\MoK_PT1d2_API\MoK_PT1d2_API\obj\Debug\netcoreapp2.1\MoK_PT1d2_API.csprojAssemblyReference.cache
 D:\Tanvi\Mok_PT1.2\MoK_PT1d2\MoK_PT1d2_API\MoK_PT1d2_API\bin\Debug\netcoreapp2.1\appsettings.Development.json
 D:\Tanvi\Mok_PT1.2\MoK_PT1d2\MoK_PT1d2_API\MoK_PT1d2_API\bin\Debug\netcoreapp2.1\appsettings.json
 D:\Tanvi\Mok_PT1.2\MoK_PT1d2\MoK_PT1d2_API\MoK_PT1d2_API\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
@@ -34,3 +33,4 @@ D:\Tanvi\Mok_PT1.2\MoK_PT1d2\MoK_PT1d2_API\MoK_PT1d2_API\obj\Debug\netcoreapp2.1
 D:\Tanvi\Mok_PT1.2\MoK_PT1d2\MoK_PT1d2_API\MoK_PT1d2_API\obj\Debug\netcoreapp2.1\MoK_PT1d2_API.dll
 D:\Tanvi\Mok_PT1.2\MoK_PT1d2\MoK_PT1d2_API\MoK_PT1d2_API\obj\Debug\netcoreapp2.1\MoK_PT1d2_API.pdb
 D:\Tanvi\Mok_PT1.2\MoK_PT1d2\MoK_PT1d2_API\MoK_PT1d2_API\obj\Debug\netcoreapp2.1\MoK_PT1d2_API.genruntimeconfig.cache
+D:\Mok_PT1d1\MoK_PT1d2\MoK_PT1d2_API\MoK_PT1d2_API\obj\Debug\netcoreapp2.1\MoK_PT1d2_API.csprojAssemblyReference.cache

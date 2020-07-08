@@ -16,5 +16,8 @@ namespace MoK_PT1d2_API
 
         public DbSet<Login> LoginInfo { get; set; }
         public DbSet<UserInfo> UsersInfo { get; set; }
+
+        public DbSet<WidgetTable> WidgetTable { get; set; }
+
     }
 }

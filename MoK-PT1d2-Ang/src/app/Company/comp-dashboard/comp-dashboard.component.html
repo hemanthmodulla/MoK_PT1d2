@@ -1,1 +1,66 @@
-<p>comp-dashboard works!</p>
+<link rel = "stylesheet" href = "https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+      <link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+      
+<div class="wrapper" [class.active] = "activewrapper">
+  <div class="top_navbar">
+    <div class="hamburger">
+       <div class="hamburger__inner" (click)="ShowSideNav($event)">
+         <div class="one"></div>
+         <div class="two"></div>
+         <div class="three"></div>
+       </div>
+    </div>
+    <div class="menu">
+      <div class="logo">
+        My Company
+      </div>
+    </div>
+  </div>
+    
+  <div class="main_container">
+      <div class="sidebar">
+          <div class="sidebar__inner">
+            <ul>
+              <li>
+                <a href="#" class="active">
+                    <span class="material-icons">
+                        preview
+                    </span>
+                    &nbsp;
+                  <span class="title">Preview Website</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="material-icons">
+                    edit
+                  </span> 
+                  &nbsp;
+                  <span class="title">Edit Mode</span>
+                </a>
+              </li>
+              <li>
+                <a href="home">
+                  <span class="material-icons">
+                    home
+                  </span>
+                  &nbsp;
+                  <span class="title">Home</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+      </div>
+      <div class="container">
+        <div class="item">
+          <app-company-grid></app-company-grid>
+        </div>
+      </div>
+  </div>
+  
+</div>

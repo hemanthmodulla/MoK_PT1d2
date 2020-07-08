@@ -6,6 +6,7 @@ import { RegistrationComponent } from './HomePage/registration/registration.comp
 import { AppComponent } from './app.component';
 import { ProfileinfoComponent } from './Personal/profileinfo/profileinfo.component';
 import { CompDashboardComponent } from './Company/comp-dashboard/comp-dashboard.component';
+import { CompanyGridComponent } from './widgets/company-grid/company-grid.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path: 'myprofile', component: ProfileinfoComponent},
   {path: 'home', component: DashboardComponent},
   {path: 'company', component: CompDashboardComponent},
+  {path: 'dashboard', component: CompanyGridComponent},
   {path: '**', component: LoginComponent}
 ];
 
